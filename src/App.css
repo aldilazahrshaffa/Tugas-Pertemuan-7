@@ -1150,3 +1150,58 @@
 .activity-card-info small {
   color: #F7F4D5 !important;
 }
+/* Summary Activities */
+.summary-section {
+  margin: 28px 0;
+  padding: 28px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0A3323, #105666);
+  color: #F7F4D5;
+}
+
+.summary-heading {
+  margin-bottom: 22px;
+}
+
+.summary-heading h2 {
+  margin: 6px 0;
+  color: #F7F4D5;
+}
+
+.summary-heading > p:last-child {
+  color: #e5e8d5;
+  font-size: 14px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.summary-card {
+  padding: 22px;
+  border: 1px solid rgba(247, 244, 213, 0.25);
+  border-radius: 16px;
+  background: rgba(247, 244, 213, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-card span {
+  color: #F7F4D5;
+  font-size: 14px;
+}
+
+.summary-card strong {
+  color: #F7F4D5;
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+}
+
+@media (max-width: 600px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

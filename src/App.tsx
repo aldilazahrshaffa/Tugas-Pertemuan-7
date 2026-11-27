@@ -79,6 +79,14 @@ function App() {
     (activity) => activity.date === selectedDate
   )
 
+  const totalActivities = activities.length
+
+const completedActivities = activities.filter(
+  (activity) => activity.completed
+).length
+
+const pendingActivities = totalActivities - completedActivities
+
   return (
     <div className="app-container">
       <Sidebar />
@@ -172,6 +180,31 @@ function App() {
         </div>
 
         <UpcomingActivities activities={activities} />
+
+        <section className="summary-section">
+  <div className="summary-heading">
+    <p className="calendar-label">YOUR PROGRESS</p>
+    <h2>Ringkasan Kegiatan</h2>
+    <p>Pantau perkembangan aktivitas harianmu.</p>
+  </div>
+
+  <div className="summary-grid">
+    <article className="summary-card">
+      <span>Total Kegiatan</span>
+      <strong>{totalActivities}</strong>
+    </article>
+
+    <article className="summary-card">
+      <span>Sudah Selesai</span>
+      <strong>{completedActivities}</strong>
+    </article>
+
+    <article className="summary-card">
+      <span>Belum Selesai</span>
+      <strong>{pendingActivities}</strong>
+    </article>
+  </div>
+</section>
 
         <ActivityForm onAddActivity={addActivity} />
 
