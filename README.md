@@ -1,75 +1,65 @@
-# React + TypeScript + Vite
+# Daynest – Daily Activity Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Daynest adalah aplikasi web untuk membantu pengguna mencatat, mengatur, dan memantau aktivitas sehari-hari agar lebih terorganisir.
 
-Currently, two official plugins are available:
+## ✨ Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Tambah Kegiatan:** Menambahkan aktivitas beserta tanggal, waktu, kategori, dan deskripsi.
+- **Hapus Kegiatan:** Menghapus aktivitas yang tidak diperlukan.
+- **Status Kegiatan:** Menandai aktivitas sebagai selesai atau belum selesai.
+- **Pencarian dan Filter:** Mencari kegiatan berdasarkan nama serta menyaring berdasarkan status.
+- **Kalender:** Melihat jadwal kegiatan berdasarkan tanggal.
+- **Upcoming Activities:** Menampilkan kegiatan yang akan berlangsung besok (H-1) dan lusa (H-2).
+- **Local Storage:** Menyimpan data kegiatan di browser agar tidak hilang ketika halaman di-refresh.
+- **Panduan Penggunaan:** Menampilkan atau menyembunyikan petunjuk penggunaan aplikasi.
 
-## React Compiler
+## 🛠️ Teknologi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
+- HTML
+- Local Storage
 
-## Expanding the ESLint configuration
+## 🚀 Cara Menjalankan Aplikasi
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone repository:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+   ```bash
+   git clone https://github.com/aldilazahrshaffa/Tugas-Pertemuan-7.git
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. Masuk ke folder project:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   cd Tugas-Pertemuan-7
+   ```
 
-```
+3. Install dependencies:
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. Jalankan aplikasi:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   npm run dev
+   ```
 
-```
+5. Buka alamat lokal yang ditampilkan oleh Vite di browser.
+
+## 📱 Tampilan Aplikasi
+
+Daynest dirancang dengan tampilan responsif sehingga dapat digunakan melalui desktop maupun perangkat mobile.
+
+## 👩‍💻 Pengembang
+
+**Nama:** Aldila Zahirra Shaffa  
+**NIM:** 1247050001  
+**Program Studi:** Teknik Informatika
+
+---
+
+© 2026 Daynest – Your Daily Activity Planner.
