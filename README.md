@@ -12,6 +12,7 @@ Daynest adalah aplikasi web untuk membantu pengguna mencatat, mengatur, dan mema
 - **Upcoming Activities:** Menampilkan kegiatan yang akan berlangsung besok (H-1) dan lusa (H-2).
 - **Local Storage:** Menyimpan data kegiatan di browser agar tidak hilang ketika halaman di-refresh.
 - **Panduan Penggunaan:** Menampilkan atau menyembunyikan petunjuk penggunaan aplikasi.
+- **Ringkasan Kegiatan:** Menampilkan jumlah total kegiatan, kegiatan yang sudah selesai, dan kegiatan yang belum selesai.
 
 ## 🛠️ Teknologi
 
